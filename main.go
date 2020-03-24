@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-func brainfuck(src []byte) []byte {
+func brainfuck(src []rune) {
 	slen := len(src)
 	data := []byte{0}
 	dlen := 0
@@ -60,7 +60,6 @@ func brainfuck(src []byte) []byte {
 			pc--
 		}
 	}
-	return data
 }
 
 func main() {
@@ -82,5 +81,5 @@ func main() {
 		}
 	}
 
-	brainfuck(content.Bytes())
+	brainfuck([]rune(content.String()))
 }
