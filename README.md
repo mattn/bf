@@ -15,7 +15,7 @@ $ bf input.bf
 ## Installation
 
 ```
-$ go get github.com/mattn/bf
+$ go install github.com/mattn/bf@latest
 ```
 
 ## License
